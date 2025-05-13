@@ -1,0 +1,741 @@
+  - Id: 1234
+    AegisName: Moonlight_Sword
+    Name: Moonlight Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 700
+    Attack: 50
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bMaxSPrate,10;
+      bonus bSPDrainValue,3;
+
+  - Id: 1477
+    AegisName: Spectral_Spear
+    Name: Spectral Spear
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 20
+    Weight: 2000
+    Attack: 170
+    Range: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus2 bSubRace,RC_Undead,10;
+      bonus2 bSubRace,RC_Demon,10;
+      bonus2 bSubEle,Ele_Dark,10;
+      bonus2 bAddEle,Ele_Dark,20;
+      bonus2 bAddEle,Ele_Undead,20;
+      bonus2 bAddRace,RC_Demon,20;
+      bonus2 bAddEff2,Eff_Confusion,1000;
+      bonus bHPGainValue,50;
+
+  - Id: 1648
+    AegisName: Staff_Of_Bordeaux
+    Name: Staff Of Bordeaux
+    Type: Weapon
+    SubType: Staff
+    Buy: 20
+    Weight: 500
+    Attack: 30
+    MagicAttack: 170
+    Range: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Classes:
+      Upper: true
+      All_Third: true
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bInt,2;
+      bonus bDex,1;
+      if (getskilllv("SA_DRAGONOLOGY") == 5) {
+         bonus bUseSPrate,-15;
+         bonus bInt,3;
+      }
+
+  - Id: 2264
+    AegisName: Munak_Turban
+    Name: Munak Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    ArmorLevel: 1
+    View: 51
+    Script: |
+      bonus2 bSubRace,RC_Undead,10;
+
+  - Id: 2277
+    AegisName: Nurse_Cap
+    Name: Nurse Cap
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 4
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    Refineable: true
+    View: 64
+    Script: |
+      bonus bInt,1;
+
+  - Id: 2285
+    AegisName: Apple_Of_Archer
+    Name: Apple of Archer
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    EquipLevelMin: 30
+    Refineable: true
+    View: 72
+    Script: |
+      bonus bDex,3;
+
+  - Id: 5046
+    AegisName: Bongun_Hat
+    Name: Bongun Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    ArmorLevel: 1
+    View: 139
+
+  - Id: 15012
+    AegisName: Puente_Robe
+    Name: Puente Robe
+    Type: Armor
+    Buy: 12000
+    Weight: 400
+    Defense: 42
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 22
+    Refineable: true
+    Script: |
+      bonus bFixedCastrate,-3;
+      bonus bHealPower,5;
+
+  - Id: 26110
+    AegisName: CandyCaneRod
+    Name: Candy Cane Rod
+    Type: Weapon
+    SubType: Staff
+    Buy: 20
+    Weight: 500
+    Attack: 10
+    MagicAttack: 140
+    Range: 1
+    Slots: 2
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Novice: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 99
+    Refineable: true
+    Script: |
+      bonus bInt,2;
+      bonus bFlee,2*getrefine();
+      if (getrefine()>= 10) {
+         bonus bFlee2,10;
+      }
+
+  - Id: 715
+    AegisName: Yellow_Gemstone
+    Name: Yellow Gemstone
+    Type: Etc
+    Buy: 450
+    Weight: 1
+    Flags:
+      BuyingStore: true
+
+  - Id: 716
+    AegisName: Red_Gemstone
+    Name: Red Gemstone
+    Type: Etc
+    Buy: 450
+    Weight: 1
+    Flags:
+      BuyingStore: true
+
+  - Id: 746
+    AegisName: Glass_Bead
+    Name: Glass Bead
+    Type: Etc
+    Buy: 1050
+    Weight: 50
+    Flags:
+      BuyingStore: true
+
+  - Id: 930
+    AegisName: Rotten_Bandage
+    Name: Rotten Bandage
+    Type: Etc
+    Buy: 350
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 1022
+    AegisName: Fox_Tail
+    Name: Nine Tails
+    Type: Etc
+    Buy: 650
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 1049
+    AegisName: Skirt_Of_Virgin
+    Name: Skirt of Virgin
+    Type: Etc
+    Buy: 1700
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 1093
+    AegisName: Empty_Potion
+    Name: Empty Potion Bottle
+    Type: Etc
+    Buy: 10
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 6144
+    AegisName: Heartbroken_Tears
+    Name: Regrettable Tears
+    Type: Etc
+    Buy: 1250
+    Weight: 2
+    Flags:
+      BuyingStore: true
+
+  - Id: 6223
+    AegisName: Carnium
+    Name: Carnium
+    Type: Etc
+    Buy: 2000
+    Weight: 150
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+
+  - Id: 6224
+    AegisName: Bradium
+    Name: Bradium
+    Type: Etc
+    Buy: 2000
+    Weight: 150
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+
+  - Id: 7014
+    AegisName: Old_Portrait
+    Name: Old Portrait
+    Type: Etc
+    Buy: 1500
+    Weight: 100
+    Flags:
+      BuyingStore: true
+
+  - Id: 7277
+    AegisName: Munak_Doll
+    Name: Munak Doll
+    Type: Etc
+    Buy: 8900
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7932
+    AegisName: Poison_Herb_Nerium
+    Name: Poison Herb Nerium
+    Type: Etc
+    Buy: 1
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7935
+    AegisName: Poison_Herb_Seratum
+    Name: Poison Herb Seratum
+    Type: Etc
+    Buy: 1
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7937
+    AegisName: Poison_Herb_Amoena
+    Name: Poison Herb Amoena
+    Type: Etc
+    Buy: 1
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7938
+    AegisName: Light_Granule
+    Name: Light Granule
+    Type: Etc
+    Buy: 1500
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25256
+    AegisName: HazyDream
+    Name: Hazy Dream Fragment
+    Type: Etc
+    Buy: 1235
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25257
+    AegisName: Bloody_LoveLetter
+    Name: Bloody Love Letter
+    Type: Etc
+    Buy: 976
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25258
+    AegisName: BrokenArrow
+    Name: Broken Arrow
+    Type: Etc
+    Buy: 687
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25259
+    AegisName: SubjugationFlyer
+    Name: Recruitment Leaflet
+    Type: Etc
+    Buy: 778
+    Weight: 10
+
+  - Id: 25271
+    AegisName: IllusionStone
+    Name: Illusion Stone
+    Type: Etc
+    Buy: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25272
+    AegisName: IllusoryStone
+    Name: Illusion Gemstone
+    Type: Etc
+    Buy: 590
+    Weight: 10
+
+  - Id: 27081
+    AegisName: AngerMoonlight_Card
+    Name: Angry Moonlight Flower Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "PA_PRESSURE",4;
+
+  - Id: 27082
+    AegisName: AngerNineTail_Card
+    Name: Angry Nine Tail Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@val = 5;
+      bonus bCritAtkRate,10;
+      if (getrefine() >= 10) {
+         .@val += 10;
+      }
+      bonus bCritical,.@val;
+
+  - Id: 27083
+    AegisName: BitterBonGun_Card
+    Name: Resentful Bongun Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bBaseAtk,20;
+      bonus bMatk,20;
+
+  - Id: 27084
+    AegisName: BitterSohee_Card
+    Name: Resentful Sohee Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,10;
+      if (getrefine() >= 10) {
+         bonus bMatkRate,2;
+      }
+
+  - Id: 27085
+    AegisName: BitterMunak_Card
+    Name: Resentful Munak Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bBaseAtk,15;
+      bonus bMatk,15;
+
+  - Id: 27086
+    AegisName: BitterArcherSk_Card
+    Name: Resentful Soldier Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      if (getiteminfo(getequipid(EQI_COMPOUND_ON), ITEMINFO_VIEW) == W_BOW) {
+         bonus3 bAutoSpell,"AC_DOUBLE",5,30;
+         if (getrefine() >= 10) {
+            bonus2 bWeaponDamageRate,W_BOW,20;
+         }
+      }
+
+  - Id: 27087
+    AegisName: WizardOfVeritas_Card
+    Name: Truthful Wizard Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,25;
+      autobonus "{ bonus bNoCastCancel; }",5,5000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; showscript \"This is the truth!\"; }";
+
+  - Id: 27088
+    AegisName: FuryHero_Card
+    Name: Fury Hero Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bAtkRate,2;
+      bonus5 bAutoSpell,"SM_ENDURE",1,5,BF_SHORT,0;
+
+  - Id: 604
+    AegisName: Branch_Of_Dead_Tree
+    Name: Dead Branch
+    Type: Usable
+    Buy: 50
+    Weight: 50
+    Flags:
+      BuyingStore: true
+      DeadBranch: true
+    Script: |
+      monster "this",-1,-1,"--ja--",-1-MOBG_BRANCH_OF_DEAD_TREE,1,"";
+
+  - Id: 607
+    AegisName: Yggdrasilberry
+    Name: Yggdrasil Berry
+    Type: Healing
+    Buy: 5000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+    Delay:
+      Duration: 5000
+      Status: Reuse_Limit_F
+    Script: |
+      percentheal 100,100;
+
+  - Id: 609
+    AegisName: Amulet
+    Name: Amulet
+    Type: Usable
+    Buy: 100
+    Weight: 100
+    Flags:
+      BuyingStore: true
+
+  - Id: 617
+    AegisName: Old_Violet_Box
+    Name: Old Purple Box
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Trade:
+      NoSell: true
+    Script: |
+      getgroupitem(IG_VioletBox);
+
+  - Id: 638
+    AegisName: Silver_Knife_Of_Chaste
+    Name: Silver Knife of Chastity
+    Type: Usable
+    Buy: 12000
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Sitting: true
+    Script: |
+      pet;
+
+  - Id: 699
+    AegisName: Fire_Scroll_3_5
+    Name: Level 5 Fire Wall
+    Type: DelayConsume
+    Buy: 2000
+    Weight: 10
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Sitting: true
+    Script: |
+      itemskill "MG_FIREWALL",5;
+
+  - Id: 12008
+    AegisName: Fire_Arrow_Container
+    Name: Fire Arrow Quiver
+    Type: Usable
+    Buy: 2
+    Sell: 0
+    Weight: 250
+    Flags:
+      BuyingStore: true
+    Script: |
+      getitem 1752,500;
+
+  - Id: 12196
+    AegisName: Hearty_Rice_Cake
+    Name: Hearty Rice Cake
+    Type: Healing
+    Buy: 20
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      percentheal 50,0;
+
+  - Id: 12197
+    AegisName: Salty_Rice_Cake
+    Name: Salty Rice Cake
+    Type: Healing
+    Buy: 20
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      percentheal 10,10;
+
+  - Id: 12734
+    AegisName: Runstone_Quality
+    Name: Luxurious Rune
+    Type: Healing
+    Buy: 2
+    Weight: 100
+    Jobs:
+      Knight: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Flags:
+      BuyingStore: true
+    Script: |
+      makerune 8;
+
+  - Id: 12738
+    AegisName: Runstone_Rare
+    Name: Rare Rune
+    Type: Healing
+    Buy: 2
+    Weight: 100
+    Jobs:
+      Knight: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Flags:
+      BuyingStore: true
+    Script: |
+      makerune 15;
+
+  - Id: 14512
+    AegisName: Meteor_10_Scroll
+    Name: Meteor Storm Scroll
+    Type: DelayConsume
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      itemskill "WZ_METEOR",10;
+
+  - Id: 14513
+    AegisName: Storm_10_Scroll
+    Name: Storm Gust Scroll
+    Type: DelayConsume
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      itemskill "WZ_STORMGUST",10;
+
+  - Id: 14514
+    AegisName: Vermilion_10_Scroll
+    Name: Lord of Vermilion Scroll
+    Type: DelayConsume
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      itemskill "WZ_VERMILION",10;
+
+  - Id: 23228
+    AegisName: HazyMooncake
+    Name: Hazy Mooncake
+    Type: Healing
+    Buy: 768
+    Weight: 10
+    Flags:
+      BuyingStore: true
+    Script: |
+      /* unknown */
+

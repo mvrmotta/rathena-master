@@ -1,0 +1,519 @@
+  - Id: 1141
+    AegisName: Immaterial_Sword
+    Name: Immaterial Sword
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 900
+    Attack: 140
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Ghost;
+      bonus3 bSPVanishRate,3,30,BF_WEAPON;
+      bonus bSPDrainValue,-1;
+      bonus bUnbreakableWeapon;
+
+  - Id: 1306
+    AegisName: War_Axe
+    Name: War Axe
+    Type: Weapon
+    SubType: 1hAxe
+    Buy: 20
+    Weight: 4200
+    Attack: 140
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 76
+    Refineable: true
+    Script: |
+      bonus bDex,2;
+      bonus bLuk,2;
+
+  - Id: 1417
+    AegisName: Pole_Axe
+    Name: Pole Axe
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 20
+    Weight: 3800
+    Attack: 160
+    Range: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 71
+    Refineable: true
+    Script: |
+      bonus bStr,1;
+      bonus bInt,2;
+      bonus bDex,1;
+
+  - Id: 1529
+    AegisName: Iron_Driver
+    Name: Iron Driver
+    Type: Weapon
+    SubType: Mace
+    Buy: 20
+    Weight: 3000
+    Attack: 155
+    Range: 2
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 78
+    Refineable: true
+
+  - Id: 13300
+    AegisName: Huuma_Bird_Wing
+    Name: Huuma Wing Shuriken
+    Type: Weapon
+    SubType: Huuma
+    Buy: 90000
+    Weight: 3000
+    Attack: 150
+    Range: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;
+      bonus bDex,-2;
+      bonus bAgi,-1;
+
+  - Id: 15129
+    AegisName: Doram_High_Suit
+    Name: Luxury Doram Suit
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 100
+    Slots: 1
+    Jobs:
+      Summoner: true
+      Spirit_Handler: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 140
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      .@r = getrefine()/2;
+      bonus bDex,.@r;
+      bonus bInt,.@r;
+
+  - Id: 20789
+    AegisName: Doram_High_Cape
+    Name: Luxury Doram Manteau
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 25
+    Slots: 1
+    Jobs:
+      Summoner: true
+      Spirit_Handler: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 140
+    Refineable: true
+    Script: |
+      bonus bFlee,7;
+      bonus2 bSubEle,Ele_Neutral,3;
+      .@r = getrefine()/3;
+      bonus bFlee2,.@r;
+      bonus bLuk,.@r;
+
+  - Id: 22084
+    AegisName: Doram_High_Shoes
+    Name: Luxury Doram Shoes
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 30
+    Slots: 1
+    Jobs:
+      Summoner: true
+      Spirit_Handler: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 140
+    Refineable: true
+    Script: |
+      bonus bMaxHP,300;
+      bonus bMaxSP,100;
+      .@r = getrefine()/3;
+      bonus bHPrecovRate,20*.@r;
+      bonus bSPrecovRate,20*.@r;
+
+  - Id: 994
+    AegisName: Flame_Heart
+    Name: Flame Heart
+    Type: Etc
+    Buy: 3000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+
+  - Id: 996
+    AegisName: Rough_Wind
+    Name: Rough Wind
+    Type: Etc
+    Buy: 3000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+
+  - Id: 997
+    AegisName: Great_Nature
+    Name: Great Nature
+    Type: Etc
+    Buy: 3000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+
+  - Id: 1003
+    AegisName: Coal
+    Name: Coal
+    Type: Etc
+    Buy: 500
+    Weight: 50
+    Flags:
+      BuyingStore: true
+
+  - Id: 6253
+    AegisName: Cold_Ice
+    Name: Cold Ice
+    Type: Etc
+    Buy: 100
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7564
+    AegisName: Rotten_Meat
+    Name: Rotten Meat
+    Type: Etc
+    Buy: 102
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7939
+    AegisName: Elder_Branch
+    Name: Elder Branch
+    Type: Etc
+    Buy: 1500
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25271
+    AegisName: IllusionStone
+    Name: Illusion Stone
+    Type: Etc
+    Buy: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25272
+    AegisName: IllusoryStone
+    Name: Illusion Gemstone
+    Type: Etc
+    Buy: 590
+    Weight: 10
+
+  - Id: 25311
+    AegisName: PieceOfBlackSpirit
+    Name: Piece of Black Horn
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25312
+    AegisName: OldDoll
+    Name: Fine Old Doll
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25313
+    AegisName: OldShell
+    Name: Old Shell
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25314
+    AegisName: ShipsLog
+    Name: Logbooks
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 27114
+    AegisName: OminousSolider_Card
+    Name: Ominous Solider Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMaxHPrate,(10+(getrefine()/3));
+      .@val = 50;
+      if (BaseLevel >= 160) {
+         .@val += 50;
+         bonus bVit,3;
+      }
+      bonus bDef,.@val;
+
+  - Id: 27115
+    AegisName: OminousPermeter_Card
+    Name: Ominous Permeter Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bInt,1;
+      bonus bMaxSP,(80+10*(.@r/2));
+      if (.@r >= 7) {
+         bonus bSPrecovRate,30;
+      }
+
+  - Id: 27116
+    AegisName: OminousHeater_Card
+    Name: Ominous Heater Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bCritical,3;
+      bonus bCritAtkRate,5;
+
+  - Id: 27117
+    AegisName: OminousAssulter_Card
+    Name: Ominous Assaulter Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@type = getiteminfo(getequipid(EQI_COMPOUND_ON), ITEMINFO_VIEW);
+      if (.@type == W_WHIP || .@type == W_MUSICAL || .@type == W_BOOK || .@type == W_2HSWORD || .@type == W_2HSPEAR) {
+         .@r = getrefine();
+         bonus bCritical,5;
+         bonus bBaseAtk,(3*.@r);
+      }
+      bonus bCritAtkRate,(10+.@r);
+
+  - Id: 27118
+    AegisName: OminousFreezer_Card
+    Name: Ominous Freezer Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMaxHPrate,10;
+      bonus bStr,2;
+      if (BaseLevel >= 160) {
+         .@val = 10;
+      }
+      if (getrefine() >= 9) {
+         .@val += 10;
+      }
+      if (.@val) {
+         bonus2 bSkillAtk,"RK_HUNDREDSPEAR",.@val;
+         bonus2 bSkillAtk,"LG_OVERBRAND",.@val;
+      }
+
+  - Id: 27119
+    AegisName: OminousTurtleG_Card
+    Name: Ominous Turtle General Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bDef,30;
+      bonus bMdef,5;
+      bonus2 bSubSize,Size_All,25;
+
+  - Id: 518
+    AegisName: Honey
+    Name: Honey
+    Type: Healing
+    Buy: 500
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(70,100),rand(20,40);
+
+  - Id: 526
+    AegisName: Royal_Jelly
+    Name: Royal Jelly
+    Type: Healing
+    Buy: 7000
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(325,405),rand(40,60);
+      sc_end SC_POISON;
+      sc_end SC_SILENCE;
+      sc_end SC_BLIND;
+      sc_end SC_CONFUSION;
+      sc_end SC_CURSE;
+
+  - Id: 576
+    AegisName: Prickly_Fruit
+    Name: Prickly Fruit
+    Type: Healing
+    Buy: 540
+    Weight: 60
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(150,300),rand(20,30);
+
+  - Id: 603
+    AegisName: Old_Blue_Box
+    Name: Old Blue Box
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Trade:
+      NoSell: true
+    Script: |
+      getgroupitem(IG_BlueBox);
+
+  - Id: 607
+    AegisName: Yggdrasilberry
+    Name: Yggdrasil Berry
+    Type: Healing
+    Buy: 5000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+    Delay:
+      Duration: 5000
+      Status: Reuse_Limit_F
+    Script: |
+      percentheal 100,100;
+
+  - Id: 617
+    AegisName: Old_Violet_Box
+    Name: Old Purple Box
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Trade:
+      NoSell: true
+    Script: |
+      getgroupitem(IG_VioletBox);
+
+  - Id: 658
+    AegisName: Union_Of_Tribe
+    Name: Union of Tribe
+    Type: Usable
+    Buy: 2
+    Weight: 500
+    Flags:
+      BuyingStore: true
+    Script: |
+      guildgetexp rand(500000,1000000);
+
+  - Id: 12736
+    AegisName: Runstone_Mystic
+    Name: Mystic Rune
+    Type: Healing
+    Buy: 2
+    Weight: 100
+    Jobs:
+      Knight: true
+    Classes:
+      All_Third: true
+      Fourth: true
+    Flags:
+      BuyingStore: true
+    Script: |
+      makerune 60;
+

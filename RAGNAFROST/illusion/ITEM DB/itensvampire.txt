@@ -1,0 +1,535 @@
+  - Id: 1260
+    AegisName: Ghoul_Leg
+    Name: Sharpened Legbone of Ghoul
+    Type: Weapon
+    SubType: Katar
+    Buy: 52500
+    Weight: 1700
+    Attack: 150
+    Range: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Undead;
+
+  - Id: 1261
+    AegisName: Infiltrator
+    Name: Infiltrator
+    Type: Weapon
+    SubType: Katar
+    Buy: 57000
+    Weight: 1500
+    Attack: 140
+    Range: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,50;
+      bonus2 bAddRace,RC_Player_Human,50;
+      bonus bDef,3;
+      bonus bFlee,5;
+      bonus bFlee2,2;
+
+  - Id: 1266
+    AegisName: Infiltrator_
+    Name: Infiltrator
+    Type: Weapon
+    SubType: Katar
+    Buy: 57000
+    Weight: 1500
+    Attack: 140
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,50;
+      bonus2 bAddRace,RC_Player_Human,50;
+      bonus bDef,3;
+      bonus bFlee,5;
+      bonus bFlee2,2;
+
+  - Id: 1557
+    AegisName: Book_Of_The_Apocalypse
+    Name: Book of the Apocalypse
+    Type: Weapon
+    SubType: Book
+    Buy: 60000
+    Weight: 800
+    Attack: 120
+    Range: 1
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Dark;
+      bonus2 bAddEle,Ele_Water,7;
+      bonus2 bAddEle,Ele_Earth,7;
+      bonus2 bAddEle,Ele_Fire,7;
+      bonus2 bAddEle,Ele_Wind,7;
+      bonus2 bSubEle,Ele_Holy,-5;
+
+  - Id: 1727
+    AegisName: Balistar_
+    Name: Ballista
+    Type: Weapon
+    SubType: Bow
+    Buy: 124000
+    Weight: 3500
+    Attack: 145
+    Range: 5
+    Slots: 1
+    Jobs:
+      BardDancer: true
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 77
+    Refineable: true
+
+  - Id: 2525
+    AegisName: Cape_Of_Ancient_Lord_
+    Name: Ancient Cape
+    Type: Armor
+    Buy: 82000
+    Weight: 600
+    Defense: 9
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+
+  - Id: 2609
+    AegisName: Skul_Ring
+    Name: Skull Ring
+    Type: Armor
+    Buy: 10000
+    Weight: 100
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+
+  - Id: 2621
+    AegisName: Ring_
+    Name: Ring
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 90
+    Script: |
+      bonus bStr,1;
+
+  - Id: 2715
+    AegisName: Skul_Ring_
+    Name: Skull Ring
+    Type: Armor
+    Buy: 10000
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    Script: |
+      bonus2 bSubRace,RC_Undead,1;
+
+  - Id: 28510
+    AegisName: Vampire's_Servant
+    Name: A Vampire's Servant
+    Type: Armor
+    Weight: 100
+    Defense: 1
+    Slots: 1
+    Locations:
+      Right_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus2 bSPDrainRate,10,1;
+
+  - Id: 718
+    AegisName: Dark_Red_Jewel
+    Name: Garnet
+    Type: Etc
+    Buy: 6000
+    Weight: 100
+    Flags:
+      BuyingStore: true
+
+  - Id: 724
+    AegisName: Cardinal_Jewel_
+    Name: Cursed Ruby
+    Type: Etc
+    Buy: 600
+    Weight: 100
+    Flags:
+      BuyingStore: true
+
+  - Id: 725
+    AegisName: Red_Jewel
+    Name: Sardonyx
+    Type: Etc
+    Buy: 6000
+    Weight: 100
+    Flags:
+      BuyingStore: true
+
+  - Id: 913
+    AegisName: Tooth_Of_Bat
+    Name: Tooth of Bat
+    Type: Etc
+    Buy: 34
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 921
+    AegisName: Mushroom_Spore
+    Name: Mushroom Spore
+    Type: Etc
+    Buy: 36
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 944
+    AegisName: Horseshoe
+    Name: Horseshoe
+    Type: Etc
+    Buy: 588
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 970
+    AegisName: Alchol
+    Name: Alcohol
+    Type: Etc
+    Buy: 400
+    Weight: 30
+    Flags:
+      BuyingStore: true
+
+  - Id: 971
+    AegisName: Detrimindexta
+    Name: Detrimindexta
+    Type: Etc
+    Buy: 400
+    Weight: 30
+    Flags:
+      BuyingStore: true
+
+  - Id: 6211
+    AegisName: Bloodsuck_Plant_Seed
+    Name: Bloodsuck Plant Seed
+    Type: Etc
+    Buy: 800
+    Weight: 1
+    Flags:
+      BuyingStore: true
+
+  - Id: 6223
+    AegisName: Carnium
+    Name: Carnium
+    Type: Etc
+    Buy: 2000
+    Weight: 150
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+
+  - Id: 6224
+    AegisName: Bradium
+    Name: Bradium
+    Type: Etc
+    Buy: 2000
+    Weight: 150
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+
+  - Id: 7006
+    AegisName: Wing_Of_Red_Bat
+    Name: Wing of Red Bat
+    Type: Etc
+    Buy: 168
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7033
+    AegisName: Poison_Spore
+    Name: Poison Spore
+    Type: Etc
+    Buy: 114
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7933
+    AegisName: Poison_Herb_Rantana
+    Name: Poison Herb Rantana
+    Type: Etc
+    Buy: 1
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7934
+    AegisName: Poison_Herb_Makulata
+    Name: Poison Herb Makulata
+    Type: Etc
+    Buy: 1
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7936
+    AegisName: Poison_Herb_Scopolia
+    Name: Poison Herb Scoporia
+    Type: Etc
+    Buy: 1
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25261
+    AegisName: Torn_Diary
+    Name: Torn Paper
+    Type: Etc
+    Buy: 900
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25262
+    AegisName: Dried_Clover
+    Name: Well-dried Clover
+    Type: Etc
+    Buy: 1200
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25263
+    AegisName: Short_Bat_Fur
+    Name: Short Bat Hair
+    Type: Etc
+    Buy: 790
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25264
+    AegisName: NightmareOfLump
+    Name: Cluster of Nightmares
+    Type: Etc
+    Buy: 822
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25265
+    AegisName: Shining_Spore
+    Name: Shining Spore
+    Type: Etc
+    Buy: 342
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25266
+    AegisName: Dried_Leaf_Of_Ygg
+    Name: Dried Yggdrasil Leaf
+    Type: Etc
+    Buy: 450
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25267
+    AegisName: SuspiciousMagicCircle
+    Name: Suspicious Pentacle
+    Type: Etc
+    Buy: 970
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25271
+    AegisName: IllusionStone
+    Name: Illusion Stone
+    Type: Etc
+    Buy: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25272
+    AegisName: IllusoryStone
+    Name: Illusion Gemstone
+    Type: Etc
+    Buy: 590
+    Weight: 10
+
+  - Id: 27101
+    AegisName: SweetNightM_Card
+    Name: Sweet Nightmare Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,20;
+      bonus bNoCastCancel;
+
+  - Id: 27102
+    AegisName: MattDrainliar_Card
+    Name: Matt Drainliar Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bResEff,Eff_Burning,10000;
+
+  - Id: 27103
+    AegisName: LivingDead_Card
+    Name: Living Dead Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bBaseAtk,20;
+      bonus bUnbreakableWeapon;
+      bonus bUnbreakableArmor;
+
+  - Id: 27104
+    AegisName: Ill_Dracula_Card
+    Name: Furious Dracula Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "PF_HPCONVERSION",1;
+
+  - Id: 27105
+    AegisName: Bomi_Card
+    Name: Bomi Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "HW_NAPALMVULCAN",4;
+
+  - Id: 505
+    AegisName: Blue_Potion
+    Name: Blue Potion
+    Type: Healing
+    Buy: 5000
+    Weight: 150
+    Script: |
+      itemheal 0,rand(40,60);
+
+  - Id: 607
+    AegisName: Yggdrasilberry
+    Name: Yggdrasil Berry
+    Type: Healing
+    Buy: 5000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+    Delay:
+      Duration: 5000
+      Status: Reuse_Limit_F
+    Script: |
+      percentheal 100,100;
+
+  - Id: 617
+    AegisName: Old_Violet_Box
+    Name: Old Purple Box
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Trade:
+      NoSell: true
+    Script: |
+      getgroupitem(IG_VioletBox);
+
+  - Id: 630
+    AegisName: Dew_Laden_Moss
+    Name: Dew Laden Moss
+    Type: Usable
+    Buy: 10
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Sitting: true
+    Script: |
+      pet;
+

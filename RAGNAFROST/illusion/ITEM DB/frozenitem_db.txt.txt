@@ -1,0 +1,308 @@
+  - Id: 1822
+    AegisName: Combo_Battle_Glove
+    Name: Combo Battle Glove
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 500
+    Attack: 30
+    Range: 1
+    Slots: 4
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"MO_TRIPLEATTACK",15;
+      bonus2 bSkillAtk,"MO_CHAINCOMBO",15;
+      bonus2 bSkillAtk,"MO_COMBOFINISH",20;
+
+  - Id: 2111
+    AegisName: Herald_Of_GOD
+    Name: Sacred Mission
+    Type: Armor
+    Buy: 128000
+    Weight: 1600
+    Defense: 120
+    Jobs:
+      Crusader: true
+    Locations:
+      Left_Hand: true
+    ArmorLevel: 1
+    EquipLevelMin: 83
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bVit,3;
+      bonus bInt,2;
+      bonus bMdef,3;
+      bonus bUnbreakableShield;
+
+  - Id: 2227
+    AegisName: Cap_
+    Name: Cap
+    Type: Armor
+    Buy: 12000
+    Weight: 400
+    Defense: 7
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    Refineable: true
+    View: 14
+
+  - Id: 2509
+    AegisName: Clack_Of_Servival
+    Name: Survivor's Manteau
+    Type: Armor
+    Buy: 20000
+    Weight: 550
+    Defense: 10
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+      bonus bVit,10;
+
+  - Id: 13314
+    AegisName: Huuma_Fluttering_Snow
+    Name: Wave Huuma Shuriken
+    Type: Weapon
+    SubType: Huuma
+    Buy: 100000
+    Weight: 1500
+    Attack: 200
+    MagicAttack: 50
+    Range: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 110
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus3 bAutoSpell,"NJ_HYOUSYOURAKU",max(getskilllv("NJ_HYOUSYOURAKU"),1),30;
+
+  - Id: 749
+    AegisName: Frozen_Rose
+    Name: Frozen Rose
+    Type: Etc
+    Buy: 35000
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 995
+    AegisName: Mistic_Frozen
+    Name: Mystic Frozen
+    Type: Etc
+    Buy: 3000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+
+  - Id: 6224
+    AegisName: Bradium
+    Name: Bradium
+    Type: Etc
+    Buy: 2000
+    Weight: 150
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+
+  - Id: 6253
+    AegisName: Cold_Ice
+    Name: Cold Ice
+    Type: Etc
+    Buy: 100
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7066
+    AegisName: Ice_Piece
+    Name: Ice Cubic
+    Type: Etc
+    Buy: 660
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7561
+    AegisName: Ice_Heart
+    Name: Glacial Heart
+    Type: Etc
+    Buy: 606
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7938
+    AegisName: Light_Granule
+    Name: Light Granule
+    Type: Etc
+    Buy: 1500
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 7939
+    AegisName: Elder_Branch
+    Name: Elder Branch
+    Type: Etc
+    Buy: 1500
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25271
+    AegisName: IllusionStone
+    Name: Illusion Stone
+    Type: Etc
+    Buy: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25297
+    AegisName: Frozen_PieceOfRock
+    Name: Frozen Stone Fragment
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25298
+    AegisName: SpritJewel
+    Name: Spirit Jewel
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25299
+    AegisName: Snowball
+    Name: Snowball
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 25300
+    AegisName: KTULLANUXsEye
+    Name: Ktullanux Eye
+    Type: Etc
+    Weight: 10
+    Flags:
+      BuyingStore: true
+
+  - Id: 27110
+    AegisName: AngerGazeti_Card
+    Name: Furious Gazeti Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bLongAtkDef,20;
+
+  - Id: 27111
+    AegisName: AngerSnowier_Card
+    Name: Furious Snowier Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddItemHealRate,11522,50;
+      bonus2 bAddItemHealRate,11523,50;
+      bonus2 bAddItemHealRate,11524,50;
+
+  - Id: 27112
+    AegisName: AngerIceTitan_Card
+    Name: Furious Ice Titan Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bDef,(5*(1+getrefine()));
+
+  - Id: 27113
+    AegisName: AwakenKtullanux_Card
+    Name: Awaken Ktullanux Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Water,(20+(3*getrefine()));
+
+  - Id: 607
+    AegisName: Yggdrasilberry
+    Name: Yggdrasil Berry
+    Type: Healing
+    Buy: 5000
+    Weight: 300
+    Flags:
+      BuyingStore: true
+    Delay:
+      Duration: 5000
+      Status: Reuse_Limit_F
+    Script: |
+      percentheal 100,100;
+
+  - Id: 22746
+    AegisName: Bullet_Case_Fleeze
+    Name: Glaciation Shot Cartridge
+    Type: Usable
+    Buy: 10
+    Weight: 250
+    Script: |
+      getitem 13217,500;
+
